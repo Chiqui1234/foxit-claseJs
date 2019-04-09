@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang='es'>
+    <head>
+        <meta charset='UTF-8'>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <title>santiagogimenez | Clase Alejandro</title>
+    </head>
+<body>
+    <h1>Unidad 7, Ejercicio 9</h1>
+    <p>Ver Consola del navegador</p>
+    <h3>Punto 2 (Login | chiqui1234//Test)</h3>
+    <div id="d1"><input type="text" placeholder="Usuario" id="username" /></div>
+    <div id="d2"><input type="text" placeholder="Contrasena" id="password" /></div>
+    <button onclick="submitForm();">Ingresar</button>
+    <p>Los ejercicios que requieren de entrada del usuario van a poder ser ejecutados con los siguientes links:</p>
+    <ul>
+        <li><a onclick="multiplier();">Convertir de U$D a AR$</a></li>
+        <li><input type="text" placeholder="Medida dada en pies" id="converterField"><button onclick="converter();">Convertir</button><br />
+        <div id="yardas"></div><div id="pulgadas"></div><div id="centimetros"></div><div id="metros"></div>
+        </li>
+    </ul>
+    <div id="resumen">
+        <!-- -->
+    </div>
+    <script src="js/ejercicio9.js"></script>
+    <script>
+    function converter()
+    {
+        var value = document.getElementById('converterField').value;
+        var yardas = document.getElementById('yardas');
+        var pulgadas = document.getElementById('pulgadas');
+        var centimetros = document.getElementById('centimetros');
+        var metros = document.getElementById('metros');
+
+        yardas.innerText = value*0.3 + ' yardas';
+        pulgadas.innerText = value*12 + ' pulgadas';
+        centimetros.innerText = value*30.5 + ' centimetros';
+        metros.innerText = value*0.31 + ' metros';
+    }
+    </script>
+</body>
+</html>
+   

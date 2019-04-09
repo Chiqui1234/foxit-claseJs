@@ -1,0 +1,52 @@
+body {
+	width: 100%;
+	overflow-x: none;
+	margin: 0;
+    padding: 10px;
+    line-height: 25px;
+	font-family: Roboto, sans-serif;
+	background-color: var(--background);
+	animation: rgbCicle 30s infinite;
+}
+@keyframes rgbCicle {
+	0% {background-color: #e32929;}
+	10% {background-color: #e329c5;}
+	20% {background-color: #7629e3;}
+	30% {background-color: #292de3;}
+	40% {background-color: #29a7e3;}
+	50% {background-color: #29dbe3;}
+	60% {background-color: #29e384;}
+	70% {background-color: #31e329;}
+	80% {background-color: #e3dd29;}
+	90% {background-color: #e38629;}
+	100% {background-color: #e32929;}
+}
+ul, ol {
+    padding: 0 0 0 30px;
+}
+a {
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+	color: #fff;
+	cursor: pointer;
+    text-shadow: 0 0 5px #eee;
+}
+a:hover {
+    border-bottom: 2px solid blue;
+}
+/**/
+#diagram {
+	float: left;
+	width: calc(100vw - 30px);
+	height: 300px;
+	margin: 10px 0 10px 0;
+	padding: 50px 0 50px 0;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	overflow: auto;
+}
+#diagram .value {
+	float: left;
+	padding: 5px;
+	border: 2px solid #29a7e3;
+}
